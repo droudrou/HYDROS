@@ -1,0 +1,2 @@
+# exclude pycache
+src/__pycache__/

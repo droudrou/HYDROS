@@ -5,7 +5,7 @@ dat=genfromtxt(argv[1])
 n=len(dat)
 sn=int(sqrt(n))
 w=dat[:,0].reshape(sn,sn)
-g=dat[:,1].reshape(sn,sn)
+g=dat[:,3].reshape(sn,sn)
 DR2d=dat[:,2].reshape(sn,sn)
 
 contourf(w,g,log10(DR2d),20,cmap='gist_heat')
