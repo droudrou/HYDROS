@@ -8,8 +8,8 @@ kpar= 1.e-2
 k= 1.e-2
 theta= 1.e-4
 
-beta= 0.01    # beta_i||
-tau= 1.    # T_i|| / T_e
+beta= 0.1    # beta_i||
+tau= 1./2.    # T_i|| / T_e
 Tpar_Tperp= 1.    # T_i|| / T_i_perp
 gam= 1.    #1=isothermal electrons; 5/3=adiabatic electrons
 eta= 0.    #normalized resistivity
@@ -19,7 +19,7 @@ eta= 0.    #normalized resistivity
 nb= 2000
 
 #initial guess for complex frequency
-start= [1.e-2 , -0.]
+start= [1.e-2 , -1.e-3]
 
 normalization=1          #1=d_i, Omega_ci;  2=rho_i||, k_||*rho_i||
 
@@ -35,7 +35,7 @@ scan_type= '1d'
 #====SETTINGS FOR FIRST SCAN DIMENSION=================
 scanvar= 'k'
 scan_range= (1.e-2,5.)
-nval= 1000         #number of scanned values
+nval= 200         #number of scanned values
 log= 1           #logarithmic spacing
 scan_list1= []	  #instead of using the scan range, specify fixed values
 
